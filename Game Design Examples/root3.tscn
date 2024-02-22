@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dnyj72ojbvo5c"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_urcrf"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_n5dm4"]
+
+[node name="root" type="Node2D"]
+
+[node name="Player1" type="CharacterBody2D" parent="."]
+position = Vector2(18, 13)
+
+[node name="Sprite2D" type="Sprite2D" parent="Player1"]
+material = SubResource("CanvasItemMaterial_urcrf")
+position = Vector2(0, -2.98023e-07)
+scale = Vector2(20, 20)
+texture = SubResource("CanvasTexture_n5dm4")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Player1"]
